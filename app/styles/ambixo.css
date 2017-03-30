@@ -6,7 +6,7 @@
   License: GNU GENERAL PUBLIC LICENSE
   
 -------------------------------------------------------------------------*/
-@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 
 @charset "UTF-8";
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 11px !important;
 	font-size: 1.4em;
@@ -51,20 +51,20 @@ input {
 }
 
 .contentActivityDesc.typeBold {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 600;
 	font-size: 20px;
 	margin-top:-20px;
 }
 
 .contentActivityDesc.typeThin {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 14px;	
 }
 
 .connectActivityContentTitle.typeContent {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 16px;		
 }
@@ -74,19 +74,19 @@ input {
 }
 
 .fontTwentyRegular {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 20px;
 }
 
 .fontTwenty {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 200;
 	font-size: 20px;
 }
 
 .fontTwentyEight {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 28px;
 }
@@ -113,7 +113,7 @@ input {
 }
 .acitvityContainerTitle {
 	color: #31bbb1;
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 28px;
 }
@@ -122,6 +122,7 @@ input {
 	color: black;
 	text-align: center;
 }
+
 
 .logo {
 	font-family: 'Aclonica', sans-serif;
@@ -145,8 +146,7 @@ input {
 
 #activities , #playing { 
     height: 100%;
-    background: url(../images/activity_bg_1.png);
-    background-color: white;
+    /*background: url(../images/activity_bg_1.png);*/
     background-repeat-y: no-repeat;
     background-position-y: bottom;
     background-size: 1920px 990px;
@@ -182,10 +182,10 @@ svg {
 .header {
 	min-width: 300px;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 37px;
     margin-top: -30px;
 	transition: all 0.3s;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 
 }
 
@@ -199,9 +199,9 @@ svg {
 
 .logoImage {
 	cursor: pointer;
-	background: url('../images/logo.png') no-repeat;
+	background: url('../images/assets/logo.png') no-repeat;
 	width: 151px;
-	height: 41px;
+	height: 52px;
 	display: inline-block;
 	margin-left: 50px;
 }
@@ -210,7 +210,7 @@ svg {
 	position: fixed;
     top: 0;
     left: 0;
-    padding-top: 50px;
+    padding-top: 37px;
     /*margin-top: -30px;*/
     background-color:white;
     /*height: 100px;*/
@@ -224,15 +224,15 @@ svg {
 }
 
 .animated-header > .container > .logoImage {
-	background: url('../images/logo_2.png') no-repeat;
+	background: url('../images/assets/logo_2.png') no-repeat;
 	width: 151px;
-	height: 41px;
+	height: 52px;
 	display: inline-block;
 }
 
 .animated-header #main-nav li a {
 	color: #3b3b3b;
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400; 	
 }
 
@@ -267,10 +267,8 @@ svg {
 
 /* Main Nav */
 .activityContainer {
-	background: url(../images/activity_bg.png) no-repeat;
-    background-color: #e6e6e6;
-    background-position: center;
-    background-size: 1920PX 723PX;
+	width: 645px;
+	margin: 0 auto;
 }
 
 .activityContainerWrapper {
@@ -322,6 +320,7 @@ svg {
 #main-nav .container, #main-nav .navbar-collapse,
 #main-nav .navbar-nav {
 	padding-left: 0;
+	padding-top: 5px;
 	/*margin: 0 auto;*/
 }
 
@@ -830,7 +829,7 @@ section#about-2 .container {
 }
 
 .contetnActivityDesc{
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 }
 .og-expander {
@@ -1515,7 +1514,7 @@ section#about-2 .container {
 
 .navbar-nav {
 	text-align: center;
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 }
 
@@ -1708,7 +1707,7 @@ section#about-2 .container {
 
 	.recruitContentDesc {
 		/*width: 200px;*/
-		font-family: 'NanumSquare';
+		font-family: 'Nanum Myeongjo';
 		font-weight: 400;
 		font-size: 14px;
 		padding-left: 10px !important;
@@ -1724,7 +1723,7 @@ section#about-2 .container {
 }
 
 .contetnActivityDesc > div > span {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 600;
 	text-decoration: underline;
 }
@@ -1847,17 +1846,153 @@ section#about-2 .container {
 }
 
 .introduceTitle {
-	height: 300px;
 	min-width: 400px;
-	background-color: #31bbb1;
 	width: 100%;
 	text-align: center;
-	padding-top: 47px;
- }
+	padding-top: 112px;
+}
 
+.introduceContent {
+	background: url('../images/assets/intro_bg_1920.png') no-repeat;
+	background-size: 808px 454px;
+	width: 808px;
+	height: 454px;
+	margin: 36px auto 217px;
+	color: #4d4d4d;
+	font-size: 16px;
+	font-family: NanumMyeongjoOTF;
+	background-position: center top;
+	padding: 0 50px 40px;
+}
+.introduceContentHeader {
+	text-align: right;
+	padding: 30px 52px 0 0;
+}
+
+.introduceContentWrapper {
+	margin-top: 49px;
+}
+
+.introduceContentTitle{
+	min-width: 285px;
+	display: inline-block;	
+}
+
+.introduceTeacher {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+   font-family: NanumMyeongjoOTF;
+
+}
+.row {
+	margin: 0px !important;
+}
+
+.professorImg{
+	width: 460px;
+	height: 460px;		
+}
+
+.introduceTeacherName {
+	font-size: 48px;
+    display: inline-block;
+    margin-top: -7px;
+}
+
+.introduceTeacherHistory {
+	display: inline-block;
+	text-align: left;
+	margin-left: 20px;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.introduceTeacherPoint{
+	height: 53px;
+    text-align: right;
+    width: 460px;
+    text-decoration: underline;
+    font-size: 14px;
+    padding-top: 21px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.introduceLink{
+	width: 975px;
+	margin: 0 auto 194px;	
+}
+
+.introduceContentWrapperSecond {
+	margin-top: 79px;
+}
+
+.subTitleImage {
+	display: block;
+	margin: 70px auto 0;
+}
+
+.introduceLinkButton {
+	width:320px;
+	text-align: center;
+	height: 100px;
+	font-size: 20px;
+  	color: #5485d3;
+  	background-color: white;
+  	margin-left: 2.5px;
+  	margin-right: 2.5px;
+  	line-height: 100px;
+  	margin-top: 65px;
+}
+
+.introduceContentSubTitle{
+	display: inline-block;	
+	vertical-align: top;
+}
+
+.introduceContentSubTitleDesc {
+	display: inline-block;
+}
+
+.introduceContentDesc {
+	vertical-align: top;
+	display: inline-block;
+	padding-top: 22px;
+}
+
+.introduceContentTitle span{
+	display: block;
+}
+
+.divideLine{
+	width: 970px;
+	color: #5485d3;
+	margin: 0 auto 140px;
+    border-top: solid 2px #5485d3;
+    padding-top: 15px;
+
+}
+
+.introduceDescRight {
+	float: right;
+}
+
+.probabilityTitle{
+	font-size: 64px;
+	color: #4d4d4d;
+}
+
+.probabilityTitleDesc{
+	margin: 22px auto 0px;
+	text-align: left;
+	font-size: 16px;
+	color: #4d4d4d;
+	display: block;
+}
 .introduceMoto {
 	height: 29px;
-  	font-family: 'NanumSquare';
+  	font-family: 'Nanum Myeongjo';
   	font-weight: 200;
 	font-size: 20px;
 	font-style: normal;
@@ -1878,15 +2013,15 @@ section#about-2 .container {
 	display: block;
 }
 .img-responsive1 {
-	background: url('../images/main3.png') no-repeat;
+	background: url('../images/assets/main1920_1.png') no-repeat;
 }
 
 .img-responsive2 {
-	background: url('../images/main2.png') no-repeat;
+	background: url('../images/assets/main1920_2.png') no-repeat;
 }
 
 .img-responsive3 {
-	background: url('../images/main1.png') no-repeat;
+	background: url('../images/assets/main1920_3.png') no-repeat;
 }
 
 .introduceDivideImage {
@@ -1895,7 +2030,7 @@ section#about-2 .container {
 }
 
 .acitvityContainerTitle {
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 	font-size: 28px;
 	font-style: normal;
@@ -1906,34 +2041,33 @@ section#about-2 .container {
 	color: #31bbb1;
 }
 .introduceSubtitle {
-	height: 55px;
 	/*font-size: 2.5vw;*/
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
-	font-size: 50px;
+	font-size: 30px;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
 	text-align: center;
-	color: #ffffff;
+	color: #4d4d4d;
+	margin-top: 36px;
 }
 
 .faqContents {
 	font-size: 14px;
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 }
 
 .introduceDesc {
 	margin-top: 20px;
-	height: 58px;
 	font-size: 20px;
-  	font-family: 'NanumSquare';
+  	font-family: 'Nanum Myeongjo';
   	font-weight: 200;
 	font-stretch: normal;
 	line-height: 1.45;
 	letter-spacing: normal;
 	text-align: center;
-	color: #ffffff;
+	color: #4d4d4d;
 }

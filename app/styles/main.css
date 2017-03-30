@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  /*font-family: 'NanumSquare' !important;*/
+  /*font-family: 'Nanum Myeongjo' !important;*/
   font-weight: 400;
 }
 
@@ -19,10 +19,17 @@ body {
   padding: 40px;
 }
 
+.bodyWrapper {
+  width: 100%;
+  background-color: white;
+  background-position: center;
+  background: url('../images/assets/bg_1920.png') no-repeat;
+}
+
 .mainBannerText {
   width: 1224px;
   height: 210px;
-  font-family: 'NanumSquare';
+  font-family: 'Nanum Myeongjo';
   font-weight: 200;
   font-style: normal;
   font-stretch: normal;
@@ -32,16 +39,23 @@ body {
   position: absolute;
   z-index: 999;
   top: 40%;
+  left: 45%;
   width: 100%;
-  font-size: 4.5vw;
-  text-align: center;
+  font-size: 45px;
+}
+
+.mainPattern {
+  position: absolute;
+  bottom: 34px;
+  right: 41px;
+  z-index: 99;
 }
 
 .introduceTitle {
-  background: url('../images/about_bg.png');
+
 }
 .mainBannerText > span {
-  font-family: 'NanumSquare';
+  font-family: 'Nanum Myeongjo';
   font-weight: 600;
 }
 
@@ -134,13 +148,6 @@ body {
 }
 
 
-.activity {
-  width: 100%;
-  height: 300px;
-  background: url('../images/activity.png') no-repeat;
-  padding-top: 89px;
-}
-
 .activityContent {
   width: 200px;
   height: 200px;
@@ -162,7 +169,7 @@ body {
 }
 
 .glyphicon {
-   font-family:'NanumSquare' !important;
+   font-family:'Nanum Myeongjo' !important;
     /*more css comes along here*/
 }
 
@@ -203,7 +210,7 @@ body {
   color: #3b3b3b;
   min-width: 100px;
   font-size: 16px;
-  font-family: 'NanumSquare';
+  font-family: 'Nanum Myeongjo';
   font-weight: 400;
   text-align: center;
   cursor: pointer;
@@ -283,7 +290,7 @@ body {
 
 .tmlabel > p{
   font-size: 16px;
-  font-family: NanumSquareOTFR;
+  font-family: Nanum MyeongjoOTFR;
   color: #3b3b3b;
   font-style: normal;
   font-stretch: normal;
@@ -306,7 +313,7 @@ body {
 
 .footerCenterDesc {
   font-size: 14px;
-  font-family: 'NanumSquare';
+  font-family: 'Nanum Myeongjo';
   font-weight: 200;
   color: #2d2d2d;
   text-align: left;
@@ -323,7 +330,7 @@ body {
 }
 
 .footerCenterDesc span {
-    font-family: 'NanumSquare';
+    font-family: 'Nanum Myeongjo';
     font-weight: 400;
     color: #3b3b3b;
 }
