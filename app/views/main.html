@@ -107,7 +107,7 @@
           <div class="row">
             <div class="col-md-6 row">
               <div class="row">
-                <img src="../images/assets/pro_1.png" class="professorImg" >
+                <img src="../images/assets/pro_1.png" class="IntroProfessorImg" >
               </div>
               <div class="introduceTeacherPoint">
                 자문위원
@@ -126,7 +126,7 @@
             </div>
             <div class="col-md-6 row">
               <div class="row">
-                <img src="../images/assets/pro_2.png" class="professorImg" >
+                <img src="../images/assets/pro_2.png" class="introProfessorImg" >
               </div>
               <div class="introduceTeacherPoint">
                 자문위원
@@ -195,10 +195,10 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 professorImg">
               <img src="../images/assets/rec_1.png"/>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 professorInfoDesc">
               <div class="hostTitle">
                 박형주 <span>진행자</span>
               </div>
@@ -211,10 +211,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 professorImg">
               <img src="../images/assets/rec_1.png"/>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 professorInfoDesc">
               <div class="hostTitle">
                 최건호 <span>강연자</span>
               </div>
@@ -227,7 +227,16 @@
               </div>
             </div>
           </div>
-
+          <div class="introduceLink historyLink">
+            <div class="row">
+              <div class="col-md-6 introduceLinkButton professorBtn">
+                신청하기 >
+              </div>
+              <div class="col-md-6 introduceLinkButton professorBtn">
+                내용 미리보기 >
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
@@ -237,117 +246,77 @@
     </section>  -->
 
     <!-- Portfolio -->
-      <section id="playing" class="section-page">
-       <div class="customBanner activity_1">
-          <div class="introduceSubtitle">
-            커넥트스쿨 활동
-          </div>   
-          <div class="introduceDesc">
-          커넥트스쿨은 소프트웨어 교육 격차를 완화하고자 전국 파트너 대학의 학생들과 함께</br>소프트웨어 교육이 필요한  초·중등 학생들에게 교육을 기부하는 프로그램입니다.
-          </div>
-        </div>
-          <h3 class="text-center acitvityContainerTitle">주요활동</h3>
-          <img src="images/activityContainer.png" class="introduceDivideImage"/>
-          <div class="introduceActivityWrapper">
-            <ul id="og-grid" class="og-grid">
-              <li ng-repeat="activity in activities">
-                  <p class="connectActivityContent" ng-repeat="(key ,value) in activity" ng-class="{ title : key == '제목'}">
-                    <span class="connectActivityContentTitle " ng-if="key != '제목'" ng-class="{ typeContent : key != '제목'}" >{{ key }} </span> 
-                    </br>
-                    <span class="contentActivityDesc" ng-bind-html="value" ng-class="{ typeBold : key=='제목' , typeThin : key != '제목'}"> </span>
-                  </p>
-              </li>
-            </ul>
-
-          </div>
-           <h3 class="text-center acitvityContainerTitle">2017 연간 일정</h3>
-          <img src="images/activityContainer.png" class="introduceDivideImage"/>
-          <div class="connectSchoolSchedule">
-          </div>
-      </section>
+      
 
        <!-- Contact -->
-      <section id="recruit" class="section-page">
-        <div class="recruit introduceSubtitle">
-          <div class="introduceSubtitle">
-            모집
-          </div>
-          <div class="introduceDesc">
-            소프트웨어 교육으로 함께 성장할 대학생 여러분들의 많은 지원 바랍니다!
-          </div>
-        </div>   
-       
 
-        <div class="container">
-           <div class="recruitContentDesc">
-            <div class="recruitContentData">
-               <p class="connectActivityContent recruitContent" ng-repeat="(key ,value) in recruit" ng-class="{ title : key == '제목'}">
-                  <span class="connectActivityContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
-                  <span class="contetnActivityDesc" ng-bind-html="value"> </span>
-                </p>
-                <div class="applyButton fontTwenty" ng-click="goApply()">
-                  지원하기 >> 
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
     
       <!-- FAQ -->
       <section id="faq" class="section-page">
+        <img src="../images/assets/sub_3.png" class="faqSubImage"/>
         <div class="customBanner faq">
           <div class="introduceSubtitle">
-            FAQ
-          </div>   
-          <div class="introduceDesc">
-          커넥트스쿨에 대해 궁금하신 점은 FAQ에서 확인해주세요.
+            지난 강연보기
           </div>
         </div>
+        <div class="container">
+            <div class="faqWrapper">
+              <div class = "faqMenus" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
+                 {{ getText(key) }}
+              </div>
+              <hr>
+               <div class="faqContents" ng-repeat="(title , content) in getContent()">
+                    <div class="faqContentTitle"> 
+                         {{ title }}
+                    </div>
+                    <div class="faqAnswerData" ng-bind-html="content">
 
-
-          <div class="container">
-              <div class="faqWrapper">
-                <div class = "faqMenus" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
-                   {{ getText(key) }}
+                    </div>
                 </div>
-                <hr>
-                 <div class="faqContents" ng-repeat="(title , content) in getContent()">
-                      <div class="faqContentTitle">
-                          <span class="faqLogo"> 
-                            Q.
-                          </span> 
-                           {{ title }}
-                      </div>
-                      <div class="faqContentContent">
-                        <span class="faqAnswer" >
-                          A.
-                        </span>
-                        <span class="faqAnswerData" ng-bind-html="content">
-                        </span>
-                      </div>
-                  </div>
-                </div>
-          </div>
+            </div>
+        </div>
       </section>
 
-     
+      <section id="etc" class="section-page">
+        <img src="../images/assets/sub_4.png" class="faqSubImage"/>
+        <div class="customBanner faq">
+          <div class="etcSubTitle">
+            기타
+          </div>
+          <div class="etcSubSubTitle">
+            <span>문의</span>
+            <div class="etcSubSubContents etcSubSubContents_1">
+              connect.info@connect.or.kr
+            </div>
+            <span class="etcSpace">장소</span>
+            <div class="etcSubSubContents etcSubSubContents_2">
+              경기도 성남시 분당구 불정로 6 그린팩토리
+            </div>
+          </div>
+          <div id="map" style="width:100%;height:400px;"></div>
+          <script>
+            var map = new naver.maps.Map('map', {center: new naver.maps.LatLng(37.359660, 127.105406)});
+          </script>
+        </div>
+      </section>
+
 
       <section id="contact-footer">
         <div class="container footerContainer">
            <!-- <div> -->
             <div class="col-xs-12 footerWrapper">
-                <ul class="col-xs-4 footerlogos">
-                    <img src="images/connectlogo.png" class="footerLogo">
-                     <img src="images/playsw.png" class="footerLogo footerLogo_2">
+                <ul class="col-xs-6 footerlogos">
+                    <img src="images/assets/footer_logo.png" class="footerLogo footerLogo_2">
+                    <img src="images/connectlogo.png" class="footerLogo footerLogo_1">
                 </ul>               
-                <ul class="col-xs-5 footerCenterDesc">
+                <!-- <ul class="col-xs-5 footerCenterDesc">
                     파트너 대학 제휴 및 기타 문의사항은 아래의 메일로 보내주시기 바랍니다. <br>
                     <span>
                       school@connect.or.kr
                     </span>
-                </ul>
+                </ul> -->
                 <div class="footerWrapperWrapper">
-                  <ul class="col-xs-3 dropup">
+                  <ul class="col-xs-6 dropup">
                       <button class="btn btn-default dropdown-toggle relatedSizeMenu" type="button" data-toggle="dropdown">관련 사이트
                       <img src="images/ic-plus.png" class="relatedSizeIcon">
                         </button>
@@ -356,8 +325,6 @@
                         <li class=""><a href="http://blog.naver.com/nvplaysw" target="_blank" >소프트웨어야 놀자 블로그</a></li>
                         <li class=""><a href="https://www.facebook.com/playsw" target="_blank">소프트웨어야 놀자 페이스북</a></li>
                       </ul>
-                    
-
                   </ul>
               </div>
             </div>
@@ -365,6 +332,5 @@
       </section>
     </div>
     <!-- Back to Top -->
-    
 </div>
    

@@ -27,22 +27,22 @@ body {
 }
 
 .mainBannerText {
-  width: 1224px;
-  height: 210px;
-  font-family: 'Nanum Myeongjo';
-  font-weight: 200;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  color: #ffffff;
-  position: absolute;
-  z-index: 999;
-  top: 40%;
-  left: 45%;
-  width: 100%;
-  font-size: 45px;
+    height: 210px;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #ffffff;
+    position: absolute;
+    z-index: 999;
+    top: 40%;
+    float: right;
+    right: 6vw;
+    font-size: 45px;
 }
+
 
 .mainPattern {
   position: absolute;
@@ -190,11 +190,6 @@ body {
 
 .faq { 
   width: 100%;
-  height: 300px;
-  background : url('../images/faqTItle.png');
-  padding-top: 89px;
-  background-color: white;
-
 }
 
 #faq > .container {
@@ -204,7 +199,7 @@ body {
 .faqMenus {
   display: inline-block;
   padding: 0 30px;
-  border-right: 1px solid #e6e6e6;
+  /*border-right: 1px solid #e6e6e6;*/
   height: 20px;
   line-height: 20px;
   color: #3b3b3b;
@@ -223,13 +218,38 @@ body {
 }
 
 .faqAnswerData {
-  display: inline-block;
+    display: inline-block;
+    color: #3c3c3c;
+    padding: 17px 47px 16px;
+    float: right;
+}
+
+.naverTvLink{
+    margin-right: 74px; 
+}
+
+.naverTvLink , .naverPostLink {
+    color: #3c3c3c;
+    cursor: pointer;
+}
+
+.naverTvLink:hover {
+    color: #5485d3;
+}
+
+.naverPostLink:hover {
+    color: #5485d3;
 }
 
 .faqLogo {
   color: #31bbb1;
   margin-right: 10px;
   font-weight: bold;
+}
+
+.faqSubImage {
+  display: block;
+  margin: 0 auto;
 }
 
 .contetnActivityDesc{
@@ -257,7 +277,7 @@ body {
   text-align: left;
 }
 .faqContents{
-  border-top: 1px solid;
+  border-bottom: 2px solid #c2c2c2;
   max-width: 970px;
   margin: 0px auto;
 }
@@ -275,13 +295,12 @@ body {
   background-position: center right;
 }
 
-#faq {
-  background-color: white;
-}
 .faqContentTitle {
-  color: black;
+    color: #3c3c3c;
   padding: 17px 35px 16px;
   background-color: transparent;
+  display: inline-block;
+  vertical-align: top; 
 }
 
 .footerWrapper{
