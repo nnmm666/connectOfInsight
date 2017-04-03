@@ -511,6 +511,31 @@ section#about-2 .container {
 		margin-left : 0px !important;
 	}
 }
+
+/*@media only screen and (max-width: 1000px) {
+
+	.bodyWrapper {
+		background: url('../images/assets/bg_768.png') no-repeat !important;
+		width: 100%;
+		background-color: white;
+		background-position: center;
+	}
+
+	.introduceContent {
+		background: url('../images/assets/intro_bg_768.png') no-repeat !important;
+		width: 735px !important;
+	    height: 479px !important;
+	    background-size: 735px 479px !important;
+		padding: 0px 15px 0 15px !important;
+
+	}
+
+	.introduceDesc {
+		width: 661px;
+		margin: 0 auto;
+	}
+}
+*/
 @media only screen and (max-width: 1250px) {
 
 
@@ -544,7 +569,7 @@ section#about-2 .container {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
 	.parallax {
 		background-attachment: scroll;
 		height: 550px;
@@ -1992,6 +2017,10 @@ section#about-2 .container {
 
 .introduceDescRight {
 	float: right;
+}
+
+.introduceDesc {
+	width: 100%;
 }
 
 .probabilityTitle{
