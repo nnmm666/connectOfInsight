@@ -14,7 +14,8 @@ body {
 .secondBodyWrapper {
     background: url('../images/assets/1920_bg2.png') no-repeat;
     background-position: center top;
-    background-size: 100%;
+    background-size: 1920px 100%;
+    background-color: #fafcfe;
 }
 
 .footerContainer{
@@ -68,9 +69,6 @@ body {
   z-index: 99;
 }
 
-.introduceTitle {
-
-}
 .mainBannerText > span {
   font-family: 'Nanum Myeongjo';
   font-weight: 600;
@@ -142,26 +140,64 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /*.container {
-    max-width: 730px;
-  }
-*/
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
+
+@media screen and (max-width: 320px) {
+    .secondBodyWrapper {
+        background: url('../images/assets/640_bg2.png') no-repeat !important;
+        background-size: 320px 100% !important;        
+      }
+}
+
+@media screen and (max-width: 640px) {
+    .secondBodyWrapper {
+        background: url('../images/assets/640_bg2.png') no-repeat !important;
+        background-size: 640px 100% !important;
+    }
+    
+    .introduceContent{
+        background: url('../images/assets/intro_bg_768.png') no-repeat !important;
+        width: 735px;
+        height: 553px;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .secondBodyWrapper {
+        background: url('../images/assets/768_bg2.png') no-repeat !important;
+        background-size: 768px 100% !important;
+
+    }
+
+    .introduceContent{
+        background: url('../images/assets/intro_bg_768.png') no-repeat !important;
+        width: 735px;
+        height: 553px;   
+    }
+
+    .introduceDesc {
+        margin: 20px auto 0px;
+        width: 536px;
+    }
+
+    .mainBannerText { 
+        width: 648px;
+    }
+
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
     /*margin-bottom: 30px;*/
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
 
 

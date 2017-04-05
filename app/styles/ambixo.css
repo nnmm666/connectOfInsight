@@ -1578,17 +1578,17 @@ section#about-2 .container {
 	}
 
 	.introduceTitle {
-		padding-top: 20px !important;
+		padding-top: 61px !important;
 		height: 200px !important;
+	}
+
+	.introduceDesc {
+		margin-top: 34px !important;
 	}
 
 	.activityTitle {
 		height: 200px !important;
 		padding-top: 50px !important;
-	}
-
-	.introduceDesc {
-		margin-top: 0px !important;
 	}
 
 	.contetnActivityDesc {
@@ -1869,7 +1869,7 @@ section#about-2 .container {
 	font-size: 16px;
 	font-family: NanumMyeongjoOTF;
 	background-position: center top;
-	padding: 0 50px 40px;
+	padding-bottom:40px;
 	min-height: 500px;
 }
 .introduceContentHeader {
@@ -1877,6 +1877,7 @@ section#about-2 .container {
 	padding: 30px 52px 0 0;
 	max-width: 980px;
 	margin: auto;
+	color: #5485d3;
 }
 
 .introduceContentWrapper {
@@ -1987,6 +1988,7 @@ section#about-2 .container {
 	vertical-align: top;
 	display: inline-block;
 	padding-top: 22px;
+	min-width: 400px;
 }
 
 .introduceContentTitle span{
