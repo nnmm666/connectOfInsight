@@ -189,14 +189,6 @@ svg {
 
 }
 
-#introduceHeader {
-	display: block;
-	width: 1px;
-	height: 159px;
-	border: 0px;
-	background: transparent;
-}
-
 .logoImage {
 	cursor: pointer;
 	background: url('../images/assets/logo.png') no-repeat;
@@ -1871,23 +1863,26 @@ section#about-2 .container {
 
 .introduceContent {
 	background: url('../images/assets/intro_bg_1920.png') no-repeat;
-	background-size: 808px 454px;
-	width: 808px;
-	height: 530px;
+	background-size: 980px 455px;
 	margin: 36px auto 217px;
 	color: #4d4d4d;
 	font-size: 16px;
 	font-family: NanumMyeongjoOTF;
 	background-position: center top;
 	padding: 0 50px 40px;
+	min-height: 500px;
 }
 .introduceContentHeader {
 	text-align: right;
 	padding: 30px 52px 0 0;
+	max-width: 980px;
+	margin: auto;
 }
 
 .introduceContentWrapper {
 	margin-top: 49px;
+	max-width: 890px;
+	margin: 0 auto;
 }
 
 .introduceContentTitle{
@@ -1907,6 +1902,7 @@ section#about-2 .container {
   	background-color: #5682d3;
   	width: 100%;
   	padding-bottom: 0.9vw;
+  	margin-top: -2px;
 }	
 
 .row {
@@ -1952,7 +1948,7 @@ section#about-2 .container {
 }
 
 .introduceContentWrapperSecond {
-	margin-top: 79px;
+	margin-top: 7vw;
 }
 
 .IntroProfessorImg{
