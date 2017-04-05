@@ -22,8 +22,8 @@ body {
 .bodyWrapper {
   width: 100%;
   background-color: white;
-  background-position: center;
-  background: url('../images/assets/bg_1920.png') no-repeat;
+  // background-position: center;
+  // background: url('../images/assets/bg_1920.png') no-repeat;
 }
 
 .mainBannerText {
@@ -43,6 +43,10 @@ body {
     font-size: 45px;
 }
 
+#introduce {
+    background-position: center;
+    background: url('../images/assets/1920_bg1.png') no-repeat;
+}
 
 .mainPattern {
   position: absolute;
