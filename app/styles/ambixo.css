@@ -193,7 +193,7 @@ svg {
 	cursor: pointer;
 	background: url('../images/assets/logo.png') no-repeat;
 	width: 151px;
-	height: 52px;
+	height: 60px;
 	display: inline-block;
 	margin-left: 50px;
 }
@@ -261,6 +261,16 @@ svg {
 .activityContainer {
 	width: 630px;
 	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.hostTitle {
+	font-size: 14px;
+	color: #4d4d4d;
+}
+
+.hostTitle span  {
+	color: #446fc9;
 }
 
 .activityContainer .row {
