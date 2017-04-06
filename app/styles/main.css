@@ -26,12 +26,6 @@ body {
   padding: 40px;
 }
 
-.bodyWrapper {
-  width: 100%;
-  background-color: white;
-  // background-position: center;
-  // background: url('../images/assets/bg_1920.png') no-repeat;
-}
 
 #education{
     padding-top: 108px;
@@ -153,15 +147,62 @@ body {
         background: url('../images/assets/640_bg2.png') no-repeat !important;
         background-size: 640px 100% !important;
     }
-    
+
     .introduceContent{
         background: url('../images/assets/intro_bg_768.png') no-repeat !important;
-        width: 735px;
         height: 553px;   
+    }
+
+    .img-responsive1 {
+        background: url('../images/assets/main640_1.png') no-repeat;
+    }
+
+    .img-responsive2 {
+        background: url('../images/assets/main640_2.png') no-repeat;
+    }
+
+    .img-responsive3 {
+        background: url('../images/assets/main640_3.png') no-repeat;
+    }
+
+
+}
+
+.hostHistory {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .introduceContentWrapper {
+        max-width: 790px !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .introduceTeacherSecond {
+        margin-top: 79px !important;
+        margin-bottom: 64px !important;
+    }
+}
+
+
+@media screen and (max-width: 722px) {
+    .introduceContentWrapper {
+        margin-left: 50px;  
+    }
+    .introduceContentWrapperSecond {
+        margin-top: 25px;
+    }
+
+    .introduceContentDesc{
+        display: block;   
     }
 }
 
 @media screen and (max-width: 768px) {
+    
+    .historyLink{
+        margin-top: 60px;
+    }
 
     .secondBodyWrapper {
         background: url('../images/assets/768_bg2.png') no-repeat !important;
@@ -169,10 +210,15 @@ body {
 
     }
 
+    .introduceContentWrapper {
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+
     .introduceContent{
         background: url('../images/assets/intro_bg_768.png') no-repeat !important;
-        width: 735px;
-        height: 553px;   
+        height: 553px;  
+        max-width: 768px; 
     }
 
     .introduceDesc {
@@ -198,6 +244,20 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+
+    .img-responsive1 {
+        background: url('../images/assets/main768_1.png') no-repeat;
+    }
+
+    .img-responsive2 {
+        background: url('../images/assets/main768_2.png') no-repeat;
+    }
+
+    .img-responsive3 {
+        background: url('../images/assets/main768_3.png') no-repeat;
+    }
+
+
 }
 
 

@@ -259,7 +259,7 @@ svg {
 
 /* Main Nav */
 .activityContainer {
-	width: 654px;
+	width: 630px;
 	margin: 0 auto;
 }
 
@@ -608,10 +608,6 @@ section#about-2 .container {
 		padding-top: 50px !important;
 	}
 
-	.recruit , .customBanner{
-	    height: 200px !important;		
-	    padding-top: 50px !important;
-	}
 
 	.main-img {
 		margin-top: 0px;
@@ -1586,11 +1582,6 @@ section#about-2 .container {
 		margin-top: 34px !important;
 	}
 
-	.activityTitle {
-		height: 200px !important;
-		padding-top: 50px !important;
-	}
-
 	.contetnActivityDesc {
 		font-size: 14px !important;
 	}
@@ -1732,7 +1723,7 @@ section#about-2 .container {
 
 .professorInfoDesc {
 	vertical-align: bottom;
-	width: 263px;
+	width: 340px;   
 	float: none;	
 	display: inline-block !important;
 	margin-left: 38px;
@@ -1944,12 +1935,13 @@ section#about-2 .container {
 }
 
 .introduceLink{
-	margin: 0 auto 194px;	
-	max-width: 980px;
+	margin: 0 auto 194px;
+	max-width: 975px;	
+	text-align: center;
 }
 
 .introduceContentWrapperSecond {
-	margin-top: 7vw;
+	margin-top: 142px;
 }
 
 .IntroProfessorImg{
