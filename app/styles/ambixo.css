@@ -163,7 +163,7 @@ svg {
 .header {
 	min-width: 300px;
     width: 100%;
-    padding-top: 37px;
+    padding-top: 40px;
     margin-top: -30px;
 	transition: all 0.3s;
 	padding-bottom: 4px;
@@ -174,9 +174,9 @@ svg {
 	cursor: pointer;
 	background: url('../images/assets/logo.png') no-repeat;
 	width: 151px;
-	height: 60px;
+	height: 50px;
 	display: inline-block;
-	margin-left: 50px;
+	margin-bottom: 10px;
 }
  
 .header.animated-header {
@@ -207,6 +207,7 @@ svg {
 	color: #3b3b3b;
 	font-family: 'Nanum Myeongjo';
 	font-weight: 400; 	
+	font-size: 16px;
 }
 
 .animated-header #main-nav li a:hover {
@@ -282,10 +283,10 @@ svg {
 #main-nav {
 	float: right;
 	max-width: 450px;
-	margin-right: 50px;
 }
+
 #main-nav li a {
-	font-size: 1.6em;
+	font-size: 16px;
 	padding: 5px 0;
 	margin: 0 1em;
 	display: inline-block;
@@ -297,11 +298,6 @@ svg {
 #main-nav li a:hover {
 	border-bottom: 5px solid white;
 }
-
-/*#main-nav li a:focus {
-	color: #31bbb1;
-	border-bottom: 6px solid #31bbb1;
-}*/
 
 .navbar-default {
     background-color: transparent;
@@ -316,12 +312,13 @@ svg {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
 	border: 0;
+	padding-right: 0px !important;
 }
 
 #main-nav .container, #main-nav .navbar-collapse,
 #main-nav .navbar-nav {
 	padding-left: 0;
-	padding-top: 5px;
+	padding-top: 4px;
 	/*margin: 0 auto;*/
 }
 
@@ -608,10 +605,13 @@ section p {
 		margin-top: 0px;
 	}
 
-	.logoImage {
-		margin-left: 0px !important;
-		background-size: 130px !important;
-	}	 
+	#main-nav .nav.navbar-nav {
+		padding-right: 15px;
+	}
+	// .logoImage {
+	// 	margin-left: 0px !important;
+	// 	background-size: 130px !important;
+	// }	 
 
 	#main-nav {
 		float: right !important;
@@ -1442,7 +1442,7 @@ section p {
 @media only screen and (max-device-width: 1024px) and (orientation : landscape) {
 
 	.header.animated-header {
-		padding-top: 20px;
+		padding-top: 15px;
         margin-top: 0;
 		opacity: 1 !important;
 	}
@@ -1489,7 +1489,7 @@ section p {
 
 
 .navbar-nav {
-	text-align: center;
+	text-align: right;
 	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
 }
@@ -1504,10 +1504,6 @@ section p {
 
 	#main-nav .nav.navbar-nav {
 	    padding-left: 7px;
-	}
-
-	#main-nav li a {
-		margin: 0 0.6em !important;
 	}
 
 	.introduceMoto {
@@ -1570,17 +1566,27 @@ section p {
 
 @media only screen and (max-width: 767px) {
 
-	/*.header {
-		height: 100px;
-	}*/
+	.logoImage {
+        background-position: center left !important;
+        background-size: 73px 33px !important;
+        margin-bottom: 0px !important;
+    }
 
+    .header.animated-header {
+    	padding-top: 0px !important;
+    }
+
+    .navbar-header {
+    	margin-top: 3px !important;
+    }
 	.navbar {
 		min-height: 15px;
 	}
 
-	.navbar-toggle {
-		
-	}
+	// .navbar-toggle {
+	//     margin-right: 12px !important;
+ //    	margin-bottom: 0px !important;
+	// }
 
 	#main-nav {
 	    padding-left: 0;
@@ -1736,17 +1742,6 @@ section p {
 		display: inline-block;
     	text-align: center;
     	width: 100%;
-	}
-
-	.navbar-toggle {
-		float: none;
-		/*margin: 1em auto;*/
-		text-align: center;
-		display: block;
-		/*margin-top: -30px;*/
-		/*margin-right: auto;*/
-		/*margin-bottom: 1em;*/
-		/*margin-top: 1em;*/
 	}
 
 	.introduceTitle {

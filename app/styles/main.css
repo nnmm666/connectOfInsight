@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  /*font-family: 'Nanum Myeongjo' !important;*/
+  font-family: 'Nanum Myeongjo' !important;
   font-weight: 400;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .introduceContent {
-    width: 735px;
+    max-width: 735px;
     height: 558px;
 }
 
@@ -59,7 +59,7 @@ body {
 #introduce {
     background-position: center; 
     background: url(../images/assets/1920_bg1.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 1920px  1146px;
     height: 100%;
     display: block;
     background-color: white;
@@ -146,19 +146,33 @@ body {
 .hostHistory {
     font-size: 14px;
 }
+
+#faq {
+    margin-top: 146px;
+}
 /* Responsive: Portrait tablets and up */
 
 @media screen and (max-width: 320px) {
     .secondBodyWrapper {
         background: url('../images/assets/320_bg2.png') no-repeat !important;
-        background-size: 320px 100% !important;        
+        background-size: 320px 3083px !important;        
       }
 }
 
+@media screen and (max-width: 639px) {
+    .faqContents {
+        height: 106px !important;
+    }
+}    
 @media screen and (max-width: 640px) {
     .secondBodyWrapper {
         background: url('../images/assets/640_bg2.png') no-repeat !important;
-        background-size: 640px 100% !important;
+        background-size: 640px 3272px !important;
+    }
+
+    .introduceContent {
+        background: url('../images/assets/intro_bg_640.png') no-repeat !important;
+        background-size: 640px 1161px;
     }
 
     .img-responsive1 {
@@ -178,6 +192,16 @@ body {
         padding: 15px !important;
     }
 
+    #faq {
+        padding-top: 0px !important;
+    }
+
+    .introduceContentDesc {
+        display: block;
+        width: 100%;
+    }
+
+    
 }
 @media screen and (max-width: 639px) {
 
@@ -211,13 +235,6 @@ body {
 
 
 @media screen and (max-width: 722px) {
-    // .introduceContentWrapper {
-    //     margin-left: 50px;  
-    // }
-    // .introduceContentWrapperSecond {
-    //     margin-top: 25px;
-    // }
-
     .introduceContentDesc{
         display: block;   
     }
@@ -250,6 +267,10 @@ body {
 }
 @media screen and (max-width: 768px) {
     
+    .faqContentTitle {
+        padding: 17px 0px 17px 20px !important;  
+    }
+
     section .container {
         padding: 15px !important;
         width: 100% !important;
@@ -267,6 +288,11 @@ body {
         background: url('../images/assets/768_bg2.png') no-repeat !important;
         background-size: 768px 3272px !important;
 
+    }
+
+    #introduce {
+        background: url('../images/assets/768_bg1.png') no-repeat !important;
+        background-size: 768px 1059px !important;
     }
 
     .subTitleImage {
@@ -394,13 +420,11 @@ body {
 
 
 .faqMenus {
+margin-left: 20px;
   display: inline-block;
-  padding: 0 30px;
-  /*border-right: 1px solid #e6e6e6;*/
   height: 20px;
   line-height: 20px;
   color: #3b3b3b;
-  min-width: 100px;
   font-size: 16px;
   font-family: 'Nanum Myeongjo';
   font-weight: 400;
