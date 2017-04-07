@@ -102,11 +102,7 @@ angular.module('testApp')
     $scope.currentTab = 'capacity';
 
     $scope.menus = {
-    	capacity : false,
-    	support : false,
-    	document : false,
-    	interview : false,
-    	activity: false
+    	capacity : false
     }
 
     $('.img-responsive').css('width' , 100+'%');
