@@ -57,12 +57,13 @@ body {
 }
 
 #introduce {
-    background-position: center; 
+    background-position: center;
     background: url(../images/assets/1920_bg1.png) no-repeat;
-    background-size: 1920px  1146px;
-    height: 100%;
+    background-size: 1920px 1146px;
+    height: 1146px;
     display: block;
-    background-color: white;
+    background-color: #5682d3 !important;
+    padding-bottom: 10vw;
 }
 
 .mainPattern {
@@ -148,7 +149,7 @@ body {
 }
 
 #faq {
-    margin-top: 146px;
+    margin-top: 251px;
 }
 /* Responsive: Portrait tablets and up */
 
@@ -242,8 +243,8 @@ body {
 
 @media screen and (max-width: 489px) {
     .introProfessorImg {
-        width: 280px !important;
-        height: 280px !important;
+        width: 270px !important;
+        height: 270px !important;
     }
 
     .introduceTeacherWrapper {
@@ -276,6 +277,14 @@ body {
         width: 100% !important;
     }
 
+    .introduceTitle {
+        min-width: 400px;
+        width: 100%;
+        text-align: center;
+        padding-top: 52px !important;
+        margin-top: -5px;
+    }
+
     .introduceContent {
         width: 100% !important;   
     }
@@ -293,6 +302,7 @@ body {
     #introduce {
         background: url('../images/assets/768_bg1.png') no-repeat !important;
         background-size: 768px 1059px !important;
+        background-color: #5682d3 !important;
     }
 
     .subTitleImage {
@@ -311,9 +321,9 @@ body {
         margin-top: 106px !important;
     }
 
-    .introduceSubtitle {
-        margin-bottom: 0px !important;
-    } 
+    // .introduceSubtitle {
+    //     margin-bottom: 0px !important;
+    // } 
 
     .faq {
         padding-top: 0px !important;
@@ -334,7 +344,7 @@ body {
     }
 
     .introduceDesc {
-        margin: 20px auto 0px;
+        margin: 10px auto 0px !important;
         width: 90%;
         margin: auto;
     }
