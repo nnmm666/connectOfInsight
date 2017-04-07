@@ -1483,7 +1483,7 @@ section p {
 }
 
 .faqWrapper hr {
-	margin: 20px 0 3px;
+	margin: 10px 0 3px;
     border: 1px solid #d8d8d8;
 }
 
@@ -1829,7 +1829,7 @@ section p {
 	margin: 36px auto 191px;
 	color: #4d4d4d;
 	font-size: 16px;
-	font-family: NanumMyeongjoOTF;
+	font-family: 'Nanum Myeongjo';
 	background-position: center top;
 	padding-bottom:40px;
 	min-height: 500px;
@@ -1858,7 +1858,7 @@ section p {
 	max-width: 1000px;
 	margin: 0 auto;
 	text-align: center;
-  	font-family: NanumMyeongjoOTF;
+  	font-family: 'Nanum Myeongjo';
 
 }
 
@@ -1964,7 +1964,7 @@ section p {
 	width: 60%;
 	color: #5485d3;
 	margin: 0 auto 68px;
-    border-top: solid 2px #5485d3;
+    border-top: solid 1px #5485d3;
     padding-top: 15px;
 
 }
@@ -1988,7 +1988,7 @@ section p {
     font-size: 16px;
     color: #4d4d4d;
     line-height: 1.8;
-    font-family: NanumMyeongjoOTF;
+    font-family: 'Nanum Myeongjo';
     display: block;
 }
 .introduceMoto {
@@ -2085,7 +2085,7 @@ section p {
 .etcSubSubTitle {
 	text-align: center;
 	color: #4d4d4d; 
-	font-family: NanumMyeongjoOTF;
+	font-family: 'Nanum Myeongjo';
 	display: block;
 	margin: 0 auto;
 }
@@ -2103,7 +2103,7 @@ section p {
 
 .etcSubSubContents {
 	font-size: 20px;
-	font-family: NanumMyeongjoOTF;
+	font-family: 'Nanum Myeongjo';
 
 }
 

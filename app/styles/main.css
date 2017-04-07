@@ -176,6 +176,12 @@ body {
         background-size: 640px 1161px;
     }
 
+    .mainBannerText {
+        width: 430px !important;
+        margin-left: 20px !important;
+        left: 20px !important;
+    }
+
     .img-responsive1 {
         background: url('../images/assets/main640_1.png') no-repeat;
     }
@@ -272,6 +278,17 @@ body {
         padding: 17px 0px 17px 20px !important;  
     }
 
+    #etc {
+        margin-top: -100px;
+    }
+
+    .divideLine{
+        width: 90%;
+    }
+    .mainPattern{
+        display: none !important;   
+    }
+
     section .container {
         padding: 15px !important;
         width: 100% !important;
@@ -318,7 +335,7 @@ body {
     }
 
     #faq {
-        margin-top: 106px !important;
+        margin-top: -30px !important;
     }
 
     // .introduceSubtitle {
@@ -508,7 +525,7 @@ margin-left: 20px;
   text-align: left;
 }
 .faqContents{
-  border-bottom: 2px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
   max-width: 970px;
   margin: 0px auto;
 }
