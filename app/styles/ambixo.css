@@ -552,10 +552,6 @@ section p {
 		margin-top: 0px;
 	}
 
-	.mainBannerText {
-		font-size: 3vw;
-	}
-
 	.contentActivityDesc.typeBold {
 		font-size: 2.1vw;	
 	}
@@ -625,7 +621,6 @@ section p {
 	
 	.mainBannerText {
 		top: 45% !important;
-		font-size: 6vw !important;
 	}	
 
 	.connectSchoolPartnerImage {
@@ -1582,11 +1577,6 @@ section p {
 	.navbar {
 		min-height: 15px;
 	}
-
-	// .navbar-toggle {
-	//     margin-right: 12px !important;
- //    	margin-bottom: 0px !important;
-	// }
 
 	#main-nav {
 	    padding-left: 0;

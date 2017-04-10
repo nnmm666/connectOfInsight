@@ -58,7 +58,7 @@ body {
 
 #introduce {
     background-position: center;
-    background: url(../images/assets/1920_bg1.png) no-repeat;
+    background: url('../images/assets/1920_bg1.png') no-repeat;
     background-size: 1920px 1146px;
     height: 1146px;
     display: block;
@@ -165,68 +165,6 @@ body {
         height: 106px !important;
     }
 }    
-@media screen and (max-width: 640px) {
-    .secondBodyWrapper {
-        background: url('../images/assets/640_bg2.png') no-repeat !important;
-        background-size: 640px 3272px !important;
-    }
-
-    .introduceContent {
-        background: url('../images/assets/intro_bg_640.png') no-repeat !important;
-        background-size: 640px 1161px;
-    }
-
-    .mainBannerText {
-        width: 430px !important;
-        margin-left: 20px !important;
-        left: 20px !important;
-    }
-
-    .img-responsive1 {
-        background: url('../images/assets/main640_1.png') no-repeat;
-    }
-
-    .img-responsive2 {
-        background: url('../images/assets/main640_2.png') no-repeat;
-    }
-
-    .img-responsive3 {
-        background: url('../images/assets/main640_3.png') no-repeat;
-    }
-
-    .activityContainer {
-        width: 100% !important;
-        padding: 15px !important;
-    }
-
-    #faq {
-        padding-top: 0px !important;
-    }
-
-    .introduceContentDesc {
-        display: block;
-        width: 100%;
-    }
-
-    
-}
-@media screen and (max-width: 639px) {
-
-    .faqAnswerData {
-        width: 100% !important;
-        padding-left: 35px !important;
-    }
-    .activityContainer {
-        width: 70% !important;
-        padding: 15px !important;
-    }
-
-    .professorInfoDesc {
-        margin-left: 0px !important;
-        margin-top: 20px !important;
-    }
-
-}
 
 @media screen and (max-width: 1024px) {
     .introduceContentWrapper {
@@ -270,6 +208,12 @@ body {
 @media screen and (max-width: 500px) {
     .introduceContentDesc {
         float: left !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainPattern {
+        display: none !important;
     }
 }
 @media screen and (max-width: 768px) {
@@ -338,10 +282,6 @@ body {
         margin-top: -30px !important;
     }
 
-    // .introduceSubtitle {
-    //     margin-bottom: 0px !important;
-    // } 
-
     .faq {
         padding-top: 0px !important;
     }
@@ -397,6 +337,76 @@ body {
         background: url('../images/assets/main768_3.png') no-repeat;
     }
 
+
+}
+
+@media screen and (max-width: 640px) {
+    .secondBodyWrapper {
+        background: url('../images/assets/640_bg2.png') no-repeat !important;
+        background-size: 640px 3272px !important;
+    }
+
+    .introduceContent {
+        background: url('../images/assets/intro_bg_640.png') no-repeat !important;
+        background-size: 608px 629px !important;
+        height: 629px !important
+    }
+
+    .mainBannerText {
+        width: 430px !important;
+        margin-left: 60px !important;
+        left: 20px !important;
+    }
+
+    #introduce {
+        background: url('../images/assets/640_bg1.png') no-repeat !important;
+        background-size: 640px 1161px !important;
+        background-color: #5682d3 !important;
+    }
+
+    .img-responsive1 {
+        background: url('../images/assets/main640_1.png') no-repeat;
+    }
+
+    .img-responsive2 {
+        background: url('../images/assets/main640_2.png') no-repeat;
+    }
+
+    .img-responsive3 {
+        background: url('../images/assets/main640_3.png') no-repeat;
+    }
+
+    .activityContainer {
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    #faq {
+        padding-top: 0px !important;
+    }
+
+    .introduceContentDesc {
+        display: block;
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width: 639px) {
+
+    .faqAnswerData {
+        width: 100% !important;
+        padding-left: 35px !important;
+    }
+    .activityContainer {
+        width: 70% !important;
+        padding: 15px !important;
+    }
+
+    .professorInfoDesc {
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+    }
 
 }
 
