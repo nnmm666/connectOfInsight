@@ -8,7 +8,6 @@
 -------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-
 @charset "UTF-8";
 
 html {
@@ -492,23 +491,6 @@ section p {
 	}
 }
 
-@media only screen and (max-width: 1000px) {
-
-	.introduceLinkButton {
-		margin: 20px auto !important;
-		display: block;
-	}
-	.introduceLinkButtonFirst {
-		margin-top: 65px !important;
-	    display: block;
-	}
-
-	.introduceLinkButtonSecond {
-	    margin-top: 20px!important;
-	    display: block;
-	}
-}
-
 @media only screen and (max-width: 1250px) {
 
 
@@ -540,7 +522,6 @@ section p {
 	}
 
 }
-
 
 @media only screen and (max-width: 1023px) {
 	.parallax {
@@ -576,15 +557,24 @@ section p {
 	}
 
 }
-@media only screen and (max-device-width: 540px) {
 
-}
-@media only screen and (max-device-width: 321px) {
-  
-	section .container {
-		padding: 20px 0 30px !important;
+@media only screen and (max-width: 1000px) {
+
+	.introduceLinkButton {
+		margin: 20px auto !important;
+		display: block;
+	}
+	.introduceLinkButtonFirst {
+		margin-top: 65px !important;
+	    display: block;
+	}
+
+	.introduceLinkButtonSecond {
+	    margin-top: 20px!important;
+	    display: block;
 	}
 }
+
 
 @media only screen and (max-width: 768px) {
 	.parallax {
@@ -653,6 +643,16 @@ section p {
 		right: auto;
 		margin: 0;
 		margin-top: 200px;
+	}
+}
+
+@media only screen and (max-device-width: 540px) {
+
+}
+@media only screen and (max-device-width: 321px) {
+  
+	section .container {
+		padding: 20px 0 30px !important;
 	}
 }
 
@@ -1119,51 +1119,6 @@ section p {
     font-size: 20px;
     margin: 0 0 0 -25px;
 }
- 
-@media screen and (max-width: 65.375em) {
- 
-    .tmtimeline > li .tmtime span {
-        font-size: 1.5em;
-    }
-}
- 
-@media screen and (max-width: 47.2em) {
-    .tmtimeline:before {
-        display: none;
-    }
- 
-    .tmtimeline > li .tmtime {
-        width: 100%;
-        position: relative;
-        padding: 0 0 20px 0;
-    }
- 
-    .tmtimeline > li .tmtime span {
-        text-align: left;
-    }
- 
-    .tmtimeline > li .tmlabel {
-        margin: 0 0 30px 0;
-        padding: 1em;
-        font-weight: 400;
-        font-size: 95%;
-    }
- 
-    .tmtimeline > li .tmlabel:after {
-        right: auto;
-        left: 20px;
-        border-right-color: transparent;
-        top: -20px;
-        border-bottom-color: rgba(255,255,255,0.9);
-    }
- 
-    .tmtimeline > li .tmicon {
-        position: relative;
-        float: right;
-        left: auto;
-        margin: -55px 5px 0 0px;
-    }  
-}
 
 
 /* More */
@@ -1421,267 +1376,18 @@ section p {
 	}
 
 }
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 768px) {
 
-.recruitContentData {
-     width: 100% !important;
-  }
+// .recruitContentData {
+//      width: 100% !important;
+//   }
 
-  .applyButton {
-  	font-size: 18px !important;
-  	padding-top: 10px;
-  	left: 70% !important;
-  }
-}
-
-@media only screen and (max-device-width: 1024px) and (orientation : landscape) {
-
-	.header.animated-header {
-		padding-top: 15px;
-        margin-top: 0;
-		opacity: 1 !important;
-	}
-
-}
-
-@media only screen and (max-width: 1024px) {
-
-	.skillbar {
-		border-radius: 4px;
-	}
-
-	.about .social-account {
-		margin-bottom: 0;
-	}
-
-	.about .social-account li {
-		margin-right: 0.55em;
-	}
-
-	.about .social-account li a {
-		font-size: 1.4em;
-	    height: 1.4em;
-	    width: 1.4em;
-	}
-
-	.faqAnswer .faqAnswerData {
-		font-size: 2vw !important;
-	}
-
-	.connectActivityContentTitle {
-		font-size: 1.8vw !important;
-	}
-	.contetnActivityDesc {
-		font-size: 15px !important;
-	}
-
-}
-
-.faqWrapper hr {
-	margin: 10px 0 3px;
-    border: 1px solid #d8d8d8;
-}
-
-
-.navbar-nav {
-	text-align: right;
-	font-family: 'Nanum Myeongjo';
-	font-weight: 400;
-}
-
-
-@media only screen and (max-width: 1000px) {
-
-	body {
-		font-size: 10px !important;
-		font-size: 1.4em;
-	}
-
-	#main-nav .nav.navbar-nav {
-	    padding-left: 7px;
-	}
-
-	.introduceMoto {
-		/*font-size: 1.3vw;*/
-	}
-
-	#faq{
-	    padding-top: 100px !important;
-	}
-
-
-}
-
-
-@media screen and (max-width: 830px) {
-
-	.og-expander p {
-		font-size: 13px;
-	}
-
-	.og-expander a {
-		font-size: 12px;
-	}
-
-}
-
-@media only screen and (max-device-width: 768px)  {
-
-	.header.animated-header {
-		padding-top: 20px;
-        margin-top: 0;
-		opacity: 1 !important;
-	}
-
-	.introduceMoto {
-		font-size: 17px !important;
-	}
-
-	.introduceTitle {
-		padding-top: 58px !important;
-		height: 200px !important;
-	}
-	
-	.introduceContent{
-		margin-bottom: 129px !important;
-	}
-
-	.introduceDesc {
-		margin-top: 34px !important;
-	}
-
-	.contetnActivityDesc {
-		font-size: 14px !important;
-	}
-
-	.connectActivityContentTitle div {
-		font-size: 18px !important;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-
-	.logoImage {
-        background-position: center left !important;
-        background-size: 73px 33px !important;
-        margin-bottom: 0px !important;
-    }
-
-    .header.animated-header {
-    	padding-top: 0px !important;
-    }
-
-    .navbar-header {
-    	margin-top: 3px !important;
-    }
-	.navbar {
-		min-height: 15px;
-	}
-
-	#main-nav {
-	    padding-left: 0;
-	    display: inline-block;
-	    vertical-align: top;
-	    margin-left: 10px;
-	}
-}
-
-@media screen and (max-width: 650px) {
-
-	.og-fullimg { display: none; }
-	.og-details { float: none; width: 100%; }
-	
-}
-
-@media only screen and (max-width: 600px) {
-	.faqMenus {
-		display: block !important;
-		height: 22px !important;
-		text-align: left !important;
-		margin-left: 0px !important;
-		border-right: none !important;
-	}
-
-	.contetnActivityDesc {
-		display: block;
-	}
-
-
-	.connectActivityContent span div {
-		margin-left : 0px !important;
-		display: block;
-	}
-
-	.recruitContent {
-		margin-bottom: 20px !important;
-	}
-
-	.recruitContentDesc {
-		padding-left: 40px !important;
-	}
-}
-
-.faq.container {
-    min-height: 1000px;
-    overflow: scroll;
-}
-.partnerDividerImg {
-    display: block;
-    margin: 0 auto 9px;
-}
-
-@media only screen and (max-width: 400px) {
-	/*.navbar-toggle {
-	    position: fixed;
-	    left: 50%;
-	    top: 100px;
-	}*/
-
-	.og-grid li{
-		height: 560px !important;
-	}
-
-	.contentActivityDesc.typeBold {
-		font-size: 15px !important;
-	}
-
-	.connectActivityContentTitle.typeContent {
-		font-size: 14px !important;
-	}
-
-	.connectSchoolSchedule {
-		height: 500px !important;
-	}
-
-	.introduceTitle > .introduceDivideImage {
-		margin: 0 auto !important;
-	}
-
-	.introduceTitle {
-		padding-top: 30px !important;
-	}
-	.introduceDesc {
-	    display: block;
-		width: none !important;	
-	    margin: 0 auto;
-	}
-
-	.mainBannerText {
-		top: 62% !important;
-	}
-
-	.recruitContentDesc {
-		/*width: 200px;*/
-		font-family: 'Nanum Myeongjo';
-		font-weight: 400;
-		font-size: 14px;
-		padding-left: 10px !important;
-	}
-
-	.acitvityContainerTitle{
-		font-size: 4.5vw !important;
-	}
-}
+//   .applyButton {
+//   	font-size: 18px !important;
+//   	padding-top: 10px;
+//   	left: 70% !important;
+//   }
+// }
 
 .contetnActivityDesc {
 	min-width: 300px;
@@ -1699,80 +1405,6 @@ section p {
 	float: none;	
 	display: inline-block !important;
 	margin-left: 38px;
-}
-@media only screen and (max-width: 640px) {
-
-	/*.header {
-		height: 140px;
-	}*/
-	.connectSchoolSchedule {
-		margin-top : 0px !important;
-	}
-
-	.mainBannerText {
-		top: 43% !important;
-	}
-
-	.introduceDivideImage {
-		margin: 10px auto 15px;
-	}
-	.applyButton {
-	  	left: 65% !important;
-	  }
-
-	.connectActivityContentTitle {
-		font-size: 2.5vw !important;
-	}
-
-	.navbar {
-		min-height: 50px;
-	}
-
-	.logo {
-		display: inline-block;
-    	text-align: center;
-    	width: 100%;
-	}
-
-	.introduceTitle {
-
-	}
-	#main-nav .navbar .container {
-		padding-right: 0;
-	}
-
-	.container > .navbar-header {
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	svg.decor {
-		display: none;
-	}
-
-	#main-img {
-		margin-top: 0;
-	}
-
-	.tmtimeline > li .tmlabel p {
-    	font-size: 1.4em;
-    }
-
-    #contact-footer {
-    	font-size: 0.9em;
-    }
-
-	.about .social-account li {
-		margin-right: 0.65em;
-	}
-
-	.about .social-account li a {
-		font-size: 1.8em;
-	    height: 1.7em;
-	    width: 1.7em;
-	}
- 
-
 }
 
 
@@ -2118,3 +1750,4 @@ section p {
 	text-align: center;
 	color: #4d4d4d;
 }
+
