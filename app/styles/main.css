@@ -153,13 +153,6 @@ body {
 }
 /* Responsive: Portrait tablets and up */
 
-@media screen and (max-width: 320px) {
-    .secondBodyWrapper {
-        background: url('../images/assets/320_bg2.png') no-repeat !important;
-        background-size: 320px 3083px !important;        
-      }
-}
-
 @media screen and (max-width: 639px) {
     .faqContents {
         height: 106px !important;
@@ -187,8 +180,8 @@ body {
 
 @media screen and (max-width: 489px) {
     .introProfessorImg {
-        width: 270px !important;
-        height: 270px !important;
+        width: 320px !important;
+        height: 320px !important;
     }
 
     .introduceTeacherWrapper {
@@ -279,7 +272,8 @@ body {
     }
 
     #faq {
-        margin-top: -30px !important;
+        margin-top: 0px !important;
+        pdding-top: 70px !important;
     }
 
     .faq {
@@ -349,19 +343,39 @@ body {
     .introduceContent {
         background: url('../images/assets/intro_bg_640.png') no-repeat !important;
         background-size: 608px 629px !important;
+        max-width: 608px !important;
         height: 629px !important
     }
+    .introduceSubtitle {
+        margin-top: 20px !important;
+        margin-bottom: 18px !important;
+    }
+    
+    .professorInfoDesc {
+        margin-left: 8px !important;
+    }
 
+    .divideLine {
+        margin: 0 auto 32px !important;
+    }
     .mainBannerText {
-        width: 430px !important;
+        width: 470px !important;
         margin-left: 60px !important;
         left: 20px !important;
     }
 
     #introduce {
         background: url('../images/assets/640_bg1.png') no-repeat !important;
-        background-size: 640px 1161px !important;
+        background-size: 640px 1144px !important;
         background-color: #5682d3 !important;
+    }
+
+    .introduceContentWrapperSecond {
+        margin-top: 230px !important;
+    }
+
+    .faqSubImage {
+        margin-bottom: 20px !important;
     }
 
     .img-responsive1 {
@@ -378,13 +392,33 @@ body {
 
     .activityContainer {
         width: 100% !important;
-        padding: 15px !important;
+        padding: 0 29px !important;
+    }
+
+    .footerlogos {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        text-align: center !important;
+    }
+
+    .footerWrapperWrapper {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .footerWrapperWrapper {
+        float: none !important;
     }
 
     #faq {
         padding-top: 0px !important;
+        margin-top: 155px !important;
     }
 
+    .showLastLecture {
+        margin: 0px !important;
+    }
     .introduceContentDesc {
         display: block;
         width: 100%;
@@ -442,6 +476,47 @@ body {
     margin-bottom: 20px !important;   
   }
 }
+
+
+@media screen and (max-width: 320px) {
+    .secondBodyWrapper {
+        background: url('../images/assets/320_bg2.png') no-repeat !important;
+        background-size: 100% !important;        
+    }
+
+    #faq {
+        margin-top: 230px !important;
+    }
+
+    .activityContainer .row {
+        text-align: center;
+    }
+
+    .probabilityTitle{
+        font-size: 20px !important;
+    }
+    .probabilityTitleDesc {
+        font-size: 14px !important;
+    }
+
+    .activityContainer {
+        padding: 0px !important;
+    }
+
+    .professorInfoDesc {
+        text-align: left;
+    }
+
+    .mainBannerText {
+        width: 350px !important;
+        font-size: 33px !important;
+        margin-left: 0px !important;
+        font-family: 'Nanum Myeongjo';
+        font-weight: 0px !important;
+
+    }
+}
+
 
 .activity_1 {
   width: 100%;
