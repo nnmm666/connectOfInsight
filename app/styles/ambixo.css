@@ -22,7 +22,7 @@ body {
 	font-size: 1.4em;
 	background-color: #3e383a;
 	color: rgba(255,255,255,0.9);
-	min-width: 400px;
+	min-width: 320px;
 }
 
 a {
@@ -1401,7 +1401,6 @@ section p {
 
 .professorInfoDesc {
 	vertical-align: bottom;
-	width: 340px;   
 	float: none;	
 	display: inline-block !important;
 	margin-left: 38px;
@@ -1439,7 +1438,7 @@ section p {
 }
 
 .introduceTitle {
-    min-width: 400px;
+    min-width: 320px;
     width: 100%;
     text-align: center;
     padding-top: 112px;
