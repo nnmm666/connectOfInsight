@@ -66,7 +66,7 @@ body {
     height: 1146px;
     display: block;
     background-color: #5682d3 !important;
-    padding-bottom: 10vw;
+    padding: 0 10px 10vw;
 }
 
 .mainPattern {
@@ -432,7 +432,7 @@ margin-left: 20px;
 @media only screen and (max-device-width: 1024px) and (orientation : landscape) {
 
     .header.animated-header {
-        padding-top: 15px;
+        padding-top: 15px !important;
         margin-top: 0;
         opacity: 1 !important;
     }
@@ -472,6 +472,10 @@ margin-left: 20px;
     }
     .contetnActivityDesc {
         font-size: 15px !important;
+    }
+
+    .animated-header .container{
+        padding-top: 7px !important;
     }
 
 }
@@ -531,13 +535,58 @@ margin-left: 20px;
 
 @media only screen and (max-device-width: 768px)  {
 
+    .animated-header .navbar {
+        margin-top: 12px;
+    }
+    .animated-header .logoImage{
+        margin-top: 8px;
+    }
 
+    #faq {
+        padding-top: 80px !important;
+    }
+
+    .faqWrapper{
+        padding: 0px 10px;
+        margin: 0px auto 340px !important;
+    }
+    .showLastLecture {
+        margin-bottom: 10px !important; 
+    }
+
+    .professorInfoDesc {
+        margin-left: 20px !important;
+    }
+
+    .hostHistory{
+        width: 275px !important;   
+    }
+
+    .hostTitle {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .hostTitle span {
+        font-size: 14px;
+    }
+
+    .professorInfoDesc {
+        width: 320px;
+    }
     .faqContentTitle {
         padding: 17px 0px 17px 20px !important;  
     }
 
     #etc {
         margin-top: -100px;
+    }
+
+    .introduceTeacher .col-md-6{
+        width: 480px;
+        margin: 0px auto 40px !important;
+        text-align: left;
+        display: block;
     }
 
     .divideLine{
@@ -556,7 +605,6 @@ margin-left: 20px;
     padding-right: 10px !important;
 
     .introduceTitle {
-        min-width: 320px;
         width: 100%;
         text-align: center;
         padding-top: 52px !important;
@@ -581,6 +629,7 @@ margin-left: 20px;
         background: url('../images/assets/768_bg1.png') no-repeat !important;
         background-size: 768px 1059px !important;
         background-color: #5682d3 !important;
+        font-family: 'Nanum Myeongjo';
     }
 
     .subTitleImage {
@@ -625,7 +674,7 @@ margin-left: 20px;
     }
 
     .mainBannerText { 
-        width: 648px;
+        width: 640px;;
     }
 
     .mainPattern {
@@ -661,7 +710,7 @@ margin-left: 20px;
 
 
     .header.animated-header {
-        padding-top: 20px;
+        padding-top: 0px !important;
         margin-top: 0;
         opacity: 1 !important;
     }
@@ -696,10 +745,6 @@ margin-left: 20px;
         height: 450px;
     }
 
-    .faq {
-        padding-top: 50px !important;
-    }
-
 
     .main-img {
         margin-top: 0px;
@@ -732,9 +777,27 @@ margin-left: 20px;
 
 @media only screen and (max-width: 767px) {
 
-    // #main-nav .nav.navbar-nav {
-    //     padding-right: 0px !important;
-    // }
+    #main-nav li a {
+        margin: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .container .navbar-header {
+        margin-right: 0px !important;
+    }
+
+    .header.animated-header {
+        padding-top: 0px !important;
+        padding-right: 15px !important;
+    }    
+
+    .container .navbar-collapse {
+        margin: 0px !important;
+    }
+
+    .header.animated-header .container{
+        padding-right: 0px !important;
+    }    
 
     .navbar-nav {
         margin: 0px !important;
@@ -745,12 +808,8 @@ margin-left: 20px;
         margin-bottom: 0px !important;
     }
 
-    .header.animated-header {
-        padding-top: 0px !important;
-    }
-
     .navbar-header {
-        margin-top: 3px !important;
+        margin-top: 6px !important;
     }
     .navbar {
         min-height: 15px;
@@ -781,11 +840,26 @@ margin-left: 20px;
     /*.header {
         height: 140px;
     }*/
+    #main-nav .navbar-collapse  {
+        margin: 10px 10px 0 0 !important;
+    }
+
+    .navbar-header {
+        margin-top: 4px !important;
+    }
+
+    .animated-header .container {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+    }
+
     .connectSchoolSchedule {
         margin-top : 0px !important;
     }
 
     .mainBannerText {
+        width: 83vw !important;
+        font-size: 8vw;
         top: 43% !important;
     }
 
@@ -810,9 +884,6 @@ margin-left: 20px;
         width: 100%;
     }
 
-    .introduceTitle {
-
-    }
     #main-nav .navbar .container {
         padding-right: 0;
     }
@@ -885,6 +956,24 @@ margin-left: 20px;
         background-size: 640px 3272px !important;
     }
 
+    .introduceDesc {
+        margin-top: 10px !important;
+    }
+
+    #main-nav .nav.navbar-nav{
+        padding-right: 0px !important;
+    }
+
+
+    #main-nav li a {
+        margin-right:0px;
+        margin-bottom: 4px;
+    }
+
+    .animated-header .container .logoImage {
+        margin-top: 5px;
+    }
+
     .introduceContent {
         background: url('../images/assets/intro_bg_640.png') no-repeat !important;
         background-size: 608px 629px !important;
@@ -904,9 +993,8 @@ margin-left: 20px;
         margin: 0 auto 32px !important;
     }
     .mainBannerText {
-        width: 470px !important;
         margin-left: 60px !important;
-        left: 20px !important;
+        left: 6px !important;
     }
 
     #introduce {
@@ -1039,9 +1127,13 @@ margin-left: 20px;
 }
 
 @media screen and (max-width: 489px) {
+
     .introProfessorImg {
-        width: 90% !important;
-        height: 90% !important;
+        width: 270px !important;
+        height: 280px !important;
+    }
+    .introduceTeacher .col-md-6 {
+        width: 270px !important;
     }
 
     .introduceTeacherWrapper {
@@ -1064,6 +1156,10 @@ margin-left: 20px;
         height: 560px !important;
     }
 
+    .logoImage {
+        width: 100px !important;
+    }
+
     .contentActivityDesc.typeBold {
         font-size: 15px !important;
     }
@@ -1074,6 +1170,10 @@ margin-left: 20px;
 
     .connectSchoolSchedule {
         height: 500px !important;
+    }
+
+    .introduceTeacherWrapper {
+        padding-left: 7px !important;
     }
 
     .introduceTitle > .introduceDivideImage {
@@ -1089,8 +1189,34 @@ margin-left: 20px;
         margin: 0 auto;
     }
 
-    .mainBannerText {
-        top: 62% !important;
+    .introduceTeacher .row{
+        width: 300px !important;
+        margin: 0 auto !important;
+    }
+
+   .mainBannerText {
+        top: 41% !important;
+    }
+
+    .introduceContent {
+        padding: 0 30px !important;
+    }
+
+    #introduce {
+        padding: 0px 0px 10vw !important;
+    }
+
+    .hostHistory{
+        width: 210px !important;   
+    }
+
+    .professorInfoDesc {
+        width: 80% !important;
+        padding-left: 0px !important;
+    }
+
+    .introduceLink {
+        margin-top: 36px;
     }
 
     .recruitContentDesc {
@@ -1100,18 +1226,62 @@ margin-left: 20px;
         font-size: 14px;
         padding-left: 10px !important;
     }
+
+    .introduceTitle {
+        width: 100% !important;
+    }
 }
-
-
 @media screen and (max-device-width: 320px) {
+
+    .introduceTitle {
+        width: 100% !important;   
+    }
+
+    .mainBannerText {
+        left: 20px !important;
+    }
+
+
+}
+@media screen and (max-device-width: 320px) {
+
+    .footerLogo_1 {
+        width: 100px;
+        margin-left: 40px;
+    }
+
+    .footerLogo_2 {
+        padding-right: 30px;
+        margin-left: 10px !important;
+        margin-right: 20px;
+    }
+    .img-responsive1 {
+        background: url('../images/assets/main320_1.png') no-repeat;
+    }
+
+    .img-responsive2 {
+        background: url('../images/assets/main320_2.png') no-repeat;
+    }
+
+    .img-responsive3 {
+        background: url('../images/assets/main320_3.png') no-repeat;
+    }
+
+    .footerWrapperWrapper {
+        width: 265px;
+    }
 
     .introProfessorImg {
         width: 300px !important;
         height: 320px !important;
     }
 
+    .navbar-toggle {
+        margin-right: 10px;
+    }
+
     #main-nav .nav.navbar-nav {
-        padding-right: 23px !important;
+        padding-right: 11px !important;
     }
 
     #introduce {
@@ -1121,6 +1291,10 @@ margin-left: 20px;
         background-position: center;
         height: 1105px !important;
 
+    }
+
+    .introduceContent {
+        padding: 0px 0px 0px 10px;
     }
 
     .introduceTeacherSecond {
@@ -1175,10 +1349,6 @@ margin-left: 20px;
         font-size: 14px !important;
     }
 
-    .professorInfoDesc {
-        width: 304px !important;
-    }
-
     .faqContentTitle {
         padding: 17px 0px 12px 2px !important;
     }
@@ -1213,6 +1383,7 @@ margin-left: 20px;
 
     .footerLogo_1 {
         padding-left: 0px !important;
+        margin-left: 10px !important;
     }
     .footerLogos {
         display: block !important;
@@ -1220,7 +1391,7 @@ margin-left: 20px;
     }
     .footerLogo {
         display: inline-block !important;
-        margin: 0px !important;
+        margin-top: 0px !important;
     }
     .naverTvLink {
         margin-right: 45px !important;
@@ -1249,7 +1420,7 @@ margin-left: 20px;
     }
 
     .introduceTeacher .col-md-6 {
-        padding-left: 10px !important;
+        padding-left: 0px !important;
         margin-top: 50px !important;
     }
 
@@ -1261,7 +1432,7 @@ margin-left: 20px;
 
     .secondBodyWrapper {
         background: url(../images/assets/320_bg2.png) no-repeat !important;
-        background-size: 100% !important;        
+        background-size: 320px 3083px !important;
     }   
 
     .introduceContentTitle span {
@@ -1282,10 +1453,7 @@ margin-left: 20px;
         margin-left: 110px;
     }
 
-    .animated-header .container {
-        padding-top: 6px !important;
-    }
-
+    
     .activityContainer .row {
         text-align: center;
     }
@@ -1321,9 +1489,15 @@ margin-left: 20px;
         margin-left: 0px !important;
         font-family: 'Nanum Myeongjo';
         font-weight: 0px !important;
-
     }   
 
+    .header.animated-header {
+        padding-right: 0px !important;
+    }
+
+    .animated-header .navbar-toggle {
+        margin-right: 23px;
+    }
 
     .introduceDivideImage {
         width: 29px !important;
