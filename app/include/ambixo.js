@@ -110,7 +110,7 @@ $('html, body').animate({ scrollTop: 0 });
     var id =  $(this).attr('href');
     var a = $('.header').height();
     var pad = 0;
-    pad = $(id).offset().top - (a + 30) + 'px';
+    pad = $(id).offset().top - (a ) + 'px';
 
     $('body, html').animate({
         scrollTop : pad

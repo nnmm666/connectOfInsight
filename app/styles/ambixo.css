@@ -132,11 +132,6 @@ input {
     background-size: 1920px 990px;
 }
 
-header span,
-.logo span {
-	color: #d56157;
-}
-
 header {
 	transition: all 0.3s;
 	position: relative;
@@ -210,9 +205,35 @@ svg {
 }
 
 .animated-header #main-nav li a:hover {
-  color: #31bbb1;
-  border-bottom: 5px solid #31bbb1;
+  
 }
+
+#main-nav li {
+	cursor: pointer;
+}
+
+#main-nav li div {
+	// display: none;
+	color: transparent;
+	display: inline-block;
+	width: 10px;
+}
+
+#main-nav li:hover div {
+	display: inline-block;
+	color: white;
+	width: 2px;
+}
+
+.animated-header #main-nav li div {
+  color: transparent;
+}
+
+.animated-header #main-nav li:hover div {
+  color: black;
+}
+
+
 
 @keyframes slideDown  {
 	0% {
@@ -287,15 +308,11 @@ svg {
 #main-nav li a {
 	font-size: 16px;
 	padding: 5px 0;
-	margin: 0 1em;
+	margin: 0 0.5em;;
 	display: inline-block;
 	font-weight: 300;
 	color: rgba(255,255,255,0.9);
 	cursor: pointer;
-}
-
-#main-nav li a:hover {
-	border-bottom: 5px solid white;
 }
 
 .navbar-default {
@@ -572,77 +589,6 @@ section p {
 	.introduceLinkButtonSecond {
 	    margin-top: 20px!important;
 	    display: block;
-	}
-}
-
-
-@media only screen and (max-width: 768px) {
-	.parallax {
-		background-attachment: scroll;
-		height: 450px;
-	}
-	
-	.faq {
-		padding-top: 50px !important;
-	}
-
-
-	.main-img {
-		margin-top: 0px;
-	}
-
-	#main-nav .nav.navbar-nav {
-		padding-right: 15px;
-	}
-	// .logoImage {
-	// 	margin-left: 0px !important;
-	// 	background-size: 130px !important;
-	// }	 
-
-	#main-nav {
-		float: right !important;
-		margin-right: 0px;
-	}
-
-	.activity_1 {
-	    height: 200px !important;
-	    padding-top: 50px !important;
-	}
-	
-	.mainBannerText {
-		top: 45% !important;
-	}	
-
-	.connectSchoolPartnerImage {
-		max-width: 95% !important;
-	}
-
-	section .container {
-		padding: 20px 0 30px !important;
-	}
-
-}
-
-@media only screen and (max-width: 640px) {
-	/*.connectSchoolSchedule {
-        height: 900px !important;
-	}*/
-	.contentActivityDesc.typeBold {
-		font-size: 2.7vw;
-	}
-
-	.parallax {
-		height: 250px;
-	}
-
-	.parallax-text {
-		font-size: 1.3;
-		padding: 0.4em 0.6em;
-		position: inherit;
-		bottom: auto;
-		right: auto;
-		margin: 0;
-		margin-top: 200px;
 	}
 }
 
