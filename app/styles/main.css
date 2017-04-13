@@ -9,6 +9,10 @@
     font-weight: 600;
 }
 
+* {
+  font-family: 'Nanum Myeongjo' !important;
+}
+
 body {
   padding: 0;
   font-family: 'Nanum Myeongjo' !important;
@@ -1192,6 +1196,10 @@ margin-left: 20px;
 
     .connectSchoolSchedule {
         height: 500px !important;
+    }
+
+    .introduceTitle {
+      height: 150px !important;
     }
 
     .introduceTeacherWrapper {
