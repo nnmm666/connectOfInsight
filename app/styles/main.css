@@ -438,7 +438,7 @@ margin-left: 20px;
 
 
 
-@media only screen and (max-device-width: 1024px) and (orientation : landscape) {
+@media only screen and (max-width: 1024px) and (orientation : landscape) {
 
     .header.animated-header {
         padding-top: 15px !important;
@@ -542,7 +542,7 @@ margin-left: 20px;
 
 }
 
-@media only screen and (max-device-width: 768px)  {
+@media only screen and (max-width: 768px)  {
 
     .animated-header .navbar {
         margin-top: 12px;
@@ -717,6 +717,10 @@ margin-left: 20px;
         background: url('../images/assets/main768_3.png') no-repeat;
     }
 
+    .img-responsive4 {
+        background: url('../images/assets/main768_4.png') no-repeat;
+    }
+
 
     .header.animated-header {
         padding-top: 0px !important;
@@ -849,6 +853,11 @@ margin-left: 20px;
     /*.header {
         height: 140px;
     }*/
+
+    .probabilityTitle {
+      font-size: 20px !important;
+    }
+
     #main-nav .navbar-collapse  {
         margin: 10px 10px 0 0 !important;
     }
@@ -1030,6 +1039,10 @@ margin-left: 20px;
 
     .img-responsive3 {
         background: url('../images/assets/main640_3.png') no-repeat;
+    }
+
+    .img-responsive4 {
+        background: url('../images/assets/main640_4.png') no-repeat;
     }
 
     .activityContainer {
@@ -1240,7 +1253,7 @@ margin-left: 20px;
         width: 100% !important;
     }
 }
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
 
     .introduceTitle {
         width: 100% !important;   
@@ -1252,7 +1265,7 @@ margin-left: 20px;
 
 
 }
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
     #map {
         height: 360px;
         margin: 23px auto 89px;
@@ -1277,6 +1290,10 @@ margin-left: 20px;
 
     .img-responsive3 {
         background: url('../images/assets/main320_3.png') no-repeat;
+    }
+
+    .img-responsive4 {
+        background: url('../images/assets/main320_4.png') no-repeat;
     }
 
     .footerWrapperWrapper {
@@ -1524,7 +1541,7 @@ margin-left: 20px;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
 
   .img-responsive1 {
     background: url('../images/assets/main1920_1.png') no-repeat;
@@ -1536,6 +1553,10 @@ margin-left: 20px;
 
   .img-responsive3 {
     background: url('../images/assets/main1920_3.png') no-repeat;
+  }
+
+  .img-responsive4 {
+    background: url('../images/assets/main1920_4.png') no-repeat;
   }
 
   #introduce {

@@ -1578,6 +1578,11 @@ section p {
 	background: url('../images/assets/main1920_3.png') no-repeat;
 }
 
+.img-responsive4 {
+	background: url('../images/assets/main1920_4.png') no-repeat;
+}
+
+
 .introduceDivideImage {
 	display: block;
 	margin: 10px auto 28px ;
