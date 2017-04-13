@@ -81,12 +81,22 @@
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=K9CpgUiluiTOEKxCVqW5&callback=loadMap"></script>
     <script type="text/javascript">
       function loadMap() {
+        var oPoint = new naver.maps.LatLng(37.359660, 127.105406);
         var mapOptions = {
-           center: new naver.maps.LatLng(37.359660, 127.105406),
+           center: oPoint,
            zoom: 10
          };
 
         var map = new naver.maps.Map('map', mapOptions);
+
+        var oIcon = new nhn.api.map.Icon('http://static.naver.com/maps2/icons/pin_spot2.png', oSize, oOffset);
+        var oMarker1 = new nhn.api.map.Marker(oIcon, { title : '그린팩토리' });  
+        oMarker1.setPoint(oPoint); 
+        map.addOverlay(oMarker1); 
+        
+        var oLabel1 = new nhn.api.map.MarkerLabel(); 
+        map.addOverlay(oLabel1); 
+        oLabel1.setVisible(true, oMarker1);
       }
     </script>
   <body ng-app="testApp">

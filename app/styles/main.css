@@ -858,10 +858,6 @@ margin-left: 20px;
         height: 140px;
     }*/
 
-    .probabilityTitle {
-      font-size: 20px !important;
-    }
-
     #main-nav .navbar-collapse  {
         margin: 10px 10px 0 0 !important;
     }
@@ -1091,6 +1087,10 @@ margin-left: 20px;
         height: 106px !important;
     }
 
+    .probabilityTitle{
+        font-size: 20px !important;
+    }
+
     .faqAnswerData {
         width: 100% !important;
         padding-left: 35px !important;
@@ -1186,12 +1186,48 @@ margin-left: 20px;
       margin-top: 20px !important;
     }
 
+    .faqContents{
+      height: 95px !important; 
+    }
+
+    .faqAnswerData {
+        padding: 3px 47px 16px;
+    }
+
     .logoImage {
         width: 100px !important;
     }
 
     .contentActivityDesc.typeBold {
         font-size: 15px !important;
+    }
+
+    .naverTvLink {
+        margin-right: 25px;
+    }
+
+    .naverPostLink {
+      float: right;
+    }
+
+    .footerContainer {
+      height: 150px !important;
+    }
+    .footerLogo_2  {
+      margin: 0px !important;
+      padding-right: 16px; !important;
+    }
+    .footerLogo_1 {
+        padding-left: 0px !important;
+        margin-left: 10px !important;
+    }
+    .footerLogos {
+        display: block !important;
+        float: none !important;
+    }
+    .footerLogo {
+        display: inline-block !important;
+        margin-top: 0px !important;
     }
 
     .connectActivityContentTitle.typeContent {
@@ -1264,6 +1300,11 @@ margin-left: 20px;
     .introduceTitle {
         width: 100% !important;
     }
+}
+@media screen and (max-width: 330px) {
+  #faq {
+    margin-top: 330px !important;
+  }
 }
 @media screen and (max-width: 320px) {
 
@@ -1417,23 +1458,6 @@ margin-left: 20px;
     .faqAnswerData {
         padding-top: 0px !important;
     }
-
-    .footerContainer {
-        height: 150px !important;
-    }
-
-    .footerLogo_1 {
-        padding-left: 0px !important;
-        margin-left: 10px !important;
-    }
-    .footerLogos {
-        display: block !important;
-        float: none !important;
-    }
-    .footerLogo {
-        display: inline-block !important;
-        margin-top: 0px !important;
-    }
     .naverTvLink {
         margin-right: 45px !important;
     }
@@ -1499,9 +1523,6 @@ margin-left: 20px;
         text-align: center;
     }
 
-    .probabilityTitle{
-        font-size: 20px !important;
-    }
     .probabilityTitleDesc {
         font-size: 14px !important;
     }
