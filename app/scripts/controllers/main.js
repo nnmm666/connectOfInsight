@@ -60,13 +60,20 @@ angular.module('testApp')
 
 
     $scope.capacity = {
-    	"주제강연: 확률론의 선과 악" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
-    	"분야강연 1: 물리학 속의 확률" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
-    	"분야강연 2: 금융 속의 확률 " : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
-        "분야강연 3: 인공지능 속의 확률 " : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
-    	"분야강연 4: 사회현상 속의 확률" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> '
+    	"주제강연: 확률론의 선과 악" : ['http://tv.naver.com/connect/playlists' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6180291&memberNo=23260204&navigationType=push'],
+    	'분야강연 1: 물리학 속의 확률' : ['http://tv.naver.com/connect/playlists' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6760612&memberNo=23260204&navigationType=push'],
+    	'분야강연 2: 금융 속의 확률 ' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
+        '분야강연 3: 인공지능 속의 확률 ' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
+    	'분야강연 4: 사회현상 속의 확률' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204']
     };
 
+    // $scope.capacity = {
+    //     "주제강연: 확률론의 선과 악" : "<span class='naverTvLink' ng-click='go('http://tv.naver.com/connect/playlists')'> 네이버 TV >> </span> <span class='naverPostLink' ng-click='go('http://m.post.naver.com/viewer/postView.nhn?')'> 네이버 포스트 >> </span> ",
+    //     '분야강연 1: 물리학 속의 확률' : "<span class='naverTvLink' ng-click='go('http://tv.naver.com/connect/playlists')'> 네이버 TV >> </span> <span class='naverPostLink' ng-click='go('http://m.post.naver.com/viewer/postView.nhn?')'> 네이버 포스트 >> </span> ",
+    //     '분야강연 2: 금융 속의 확률 ' : "<span class='naverTvLink' ng-click='go('http://tv.naver.com/connect')'> 네이버 TV >> </span> <span class='naverPostLink' ng-click='go('http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204')'> 네이버 포스트 >> </span> ",
+    //     '분야강연 3: 인공지능 속의 확률 ' : "<span class='naverTvLink' ng-click='go('http://tv.naver.com/connect')'> 네이버 TV >> </span> <span class='naverPostLink' ng-click='go('http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204')'> 네이버 포스트 >> </span> ",
+    //     '분야강연 4: 사회현상 속의 확률' : "<span class='naverTvLink' ng-click='go('http://tv.naver.com/connect')' > 네이버 TV >> </span> <span class='naverPostLink' ng-click='go('http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204')'> 네이버 포스트 >> </span> "
+    // };
     // $scope.support = {
     // 	"학점 항목에서 직전학기 평점을 기준으로 선택해야 하나요? 전체학기 누적 평점을 기준으로 선택해야 하나요?" : '지원서 작성일 기준, 성적 증명서에 기재된 전체학기 누적 평점을 기준으로 본인의 학점에 해당하는 항목을 선택하시면 됩니다.',
     // 	"최종 제출 후, 내용을 잘못 입력하여 수정하고 싶습니다. 어떻게 해야하나요?" : "최종 제출 후에는 지원서 수정 및 제출 취소 모두 불가합니다.<br> 제출 전 반드시 별도의 파일로 저장해두시기 바라며, 작성 내용을 꼼꼼히 확인하신 후 제출하시기 바랍니다."
@@ -142,16 +149,13 @@ angular.module('testApp')
     	return $scope[$scope.currentTab];
     }
 
-    $scope.applyConnectSchool = function() {
-    	
-    }
-
     $scope.clickToggle = function(){
         $scope.toggleSize = !$scope.toggle;
     }
 
-    $scope.goApply = function() {
-        window.open("https://form.office.naver.com/form/responseView.cmd?formkey=NmE4N2ExYjItZGIxYS00ZjJhLTg4YmQtYWM2M2MzNDA1YTc5&sourceId=urlshare",'_blank');
+    $scope.go = function(url) {
+        window.open(url,'_blank');
     }
+
   });
  

@@ -153,13 +153,13 @@
           </div>
           <div class="introduceLink">
             <div class="row">
-              <div class="col-md-4 introduceLinkButton">
+              <div class="col-md-4 introduceLinkButton" ng-click="go('http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204')">
                 네이버 포스트 >
               </div>
-              <div class="col-md-4 introduceLinkButton">
+              <div class="col-md-4 introduceLinkButton" ng-click="go('http://tv.naver.com/connect')">
                 네이버 TV >
               </div>
-              <div class="col-md-4 introduceLinkButton">
+              <div class="col-md-4 introduceLinkButton" ng-click="go('http://connect.or.kr/home')">
                 커넥트재단 홈페이지 >
               </div>
             </div>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="hostHistory">
                   아주대학교 전자공학과 부교수<br>
-                  2013 IEEE Outstanding Young Engineer Award 
+                  2013 IEEE Outstanding Young Engineer Award <br>
                   (CPMT Society) 수상<br>
                   2007~2011 IBM Watson 연구소 근무<br>
                   KAIST 물리학 학사, 전자공학 석사/박사
@@ -239,10 +239,10 @@
           </div>
           <div class="introduceLink historyLink">
             <div class="row">
-              <div class="col-md-6 introduceLinkButton professorBtn introduceLinkButtonFirst">
+              <div class="col-md-6 introduceLinkButton professorBtn introduceLinkButtonFirst" ng-click="go('http://naver.me/Fjk7VbBw')">
                 신청하기 >
               </div>
-              <div class="col-md-6 introduceLinkButton professorBtn introduceLinkButtonSecond">
+              <div class="col-md-6 introduceLinkButton professorBtn introduceLinkButtonSecond" ng-click="go('http://naver.me/Gx4VO3dU')">
                 내용 미리보기 >
               </div>
             </div>
@@ -270,15 +270,18 @@
           </div>
           <div class="container">
             <div class="faqWrapper">
-             <!--  <div class = "faqMenus" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
-                 {{ getText(key) }}
-              </div> -->
               <hr>
               <div class="faqContents" ng-repeat="(title , content) in getContent()">
-                <div class="faqContentTitle"> 
+                <div class="faqContentTitle">
                   {{ title }}
                 </div>
-                <div class="faqAnswerData" ng-bind-html="content">
+                <div class="faqAnswerData">
+                  <span class='naverTvLink' ng-click="go(content[0])">
+                    네이버 TV >>
+                  </span>
+                  <span class='naverPostLink' ng-click="go(content[1])"s> 
+                    네이버 포스트 >>
+                  </span>
                 </div>
               </div>
             </div>
@@ -301,7 +304,7 @@
                 경기도 성남시 분당구 불정로 6 그린팩토리
               </div>
             </div>
-            <div id="map">
+            <div id="map" ng-click="go('http://naver.me/xkfItMgS')">
             </div>
             <script type="text/javascript">
               
@@ -329,9 +332,10 @@
                         <img src="images/ic-plus.png" class="relatedSizeIcon">
                           </button>
                         <ul class="dropdown-menu">
-                          <li><a href="http://www.playsw.or.kr/main" target="_blank">소프트웨어야 놀자 홈페이지</a></li>
-                          <li class=""><a href="http://blog.naver.com/nvplaysw" target="_blank" >소프트웨어야 놀자 블로그</a></li>
-                          <li class=""><a href="https://www.facebook.com/playsw" target="_blank">소프트웨어야 놀자 페이스북</a></li>
+                          <li><a href="http://connect.or.kr/home" target="_blank">재단 홈페이지</a></li>
+                          <li class=""><a href="https://www.facebook.com/foundation.connect/" target="_blank">통찰의 연결 페이스북</a></li>
+                          <li><a href="http://tv.naver.com/connect" target="_blank">네이버 TV</a></li>
+                          <li class=""><a href="http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204" target="_blank" >네이버 포스트</a></li>
                         </ul>
                     </ul>
                 </div>
