@@ -63,7 +63,7 @@ angular.module('testApp')
     	"주제강연: 확률론의 선과 악" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
     	"분야강연 1: 물리학 속의 확률" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
     	"분야강연 2: 금융 속의 확률 " : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
-        "분야강연 3: 범죄수사 속의 확률 " : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
+        "분야강연 3: 인공지능 속의 확률 " : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> ',
     	"분야강연 4: 사회현상 속의 확률" : '<span class="naverTvLink"> 네이버 TV >> </span> <span class="naverPostLink"> 네이버 포스트 >> </span> '
     };
 
