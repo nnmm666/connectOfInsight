@@ -60,11 +60,11 @@ angular.module('testApp')
 
 
     $scope.capacity = {
-    	"주제강연: 확률론의 선과 악" : ['http://www.edwith.org/probability' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6180291&memberNo=23260204&navigationType=push'],
-    	'분야강연 1: 물리학 속의 확률' : ['http://www.edwith.org/insight1-2' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6760612&memberNo=23260204&navigationType=push'],
-    	'분야강연 2: 금융 속의 확률 ' : ['http://www.edwith.org/insight1-3' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
-        '분야강연 3: 인공지능 속의 확률 ' : ['http://www.edwith.org/insight1-4' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
-    	'분야강연 4: 사회현상 속의 확률' : ['http://www.edwith.org/insight1-5' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204']
+    	"주제강연: 확률론의 선과 악" : ['http://tv.naver.com/connect/playlists' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6180291&memberNo=23260204&navigationType=push'],
+    	'분야강연 1: 물리학 속의 확률' : ['http://tv.naver.com/connect/playlists' , 'http://m.post.naver.com/viewer/postView.nhn?volumeNo=6760612&memberNo=23260204&navigationType=push'],
+    	'분야강연 2: 금융 속의 확률 ' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
+        '분야강연 3: 인공지능 속의 확률 ' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204'],
+    	'분야강연 4: 사회현상 속의 확률' : ['http://tv.naver.com/connect' , 'http://m.post.naver.com/my/series/detail.nhn?seriesNo=243492&memberNo=23260204']
     };
 
     // $scope.capacity = {
